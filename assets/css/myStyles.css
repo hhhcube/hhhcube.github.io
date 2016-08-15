@@ -1,0 +1,14 @@
+#goodat{padding-top:10px}
+
+.myimage {
+  background: transparent url("Rock-Climbing-.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  height: 500px;
+}
+
+.otherColor{
+    color:#ffdae0;
+}
