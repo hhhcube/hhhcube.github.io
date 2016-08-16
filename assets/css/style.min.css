@@ -19,11 +19,13 @@ a:focus{outline:0}
 .form-control{border-radius:0;box-shadow:none;border-color:#fff;height:49px}
 .form-control:focus{box-shadow:none;border-color:#4286f5}
 .form-control-feedback{line-height:50px}
+
 .back-to-top{text-align:center;position:fixed;bottom:15px;right:10px;text-decoration:none;color:#fff;
 	background-color:#e91e63;display:none;border-radius:100%;width:56px;height:56px;
 	box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
 .back-to-top .mdicon{font-size:36px;line-height:56px}
 .back-to-top:hover{background:#e91e63;color:#fff;box-shadow:0 3px 6px rgba(0,0,0,.2),0 3px 6px rgba(0,0,0,.28)}
+
 .navbar-default .navbar-toggle .icon-bar{background-color:#fff}
 .navbar-default .navbar-toggle{border-color:#fff;margin-top:0}
 .navbar-default .navbar-toggle:focus .icon-bar,.navbar-default 
@@ -51,6 +53,7 @@ a:focus{outline:0}
 .navbar-nav>.active>a:focus,.main-menu.floating-menu .navbar-nav>.active>a:hover,.main-menu.floating-menu 
 .navbar-nav>li>a:focus,.main-menu.floating-menu 
 .navbar-nav>li>a:hover{background:0 0;color:#fca1c0}#banner{padding:0;text-align:center;background:#4286f5;width:100%}
+
 #banner h1{font-weight:400;color:#e91e63}
 #banner h2{font-size:60px;font-weight:500;color:#fff;padding-bottom:50px;}
 #banner h2 span{font-weight:300}
@@ -58,7 +61,8 @@ a:focus{outline:0}
 #banner p{font-size:20px;font-weight:300;color:#fff}
 #banner .container{position:relative}
  /*Margin for block on banner*/
-#banner .container .intro{margin-top:150px}
+#banner .container .intro {margin-top:150px}
+
 #about{background-color:#fff}
 .sectionIcon{background:0 0;top:-66px;font-size:66px;color:#fff}
 /*Heading fonts for the different sections*/
@@ -92,9 +96,11 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 .progress-bar-success{background-color:#259b24}.progress-bar-info{background-color:#3f51b5}
 .progress-bar-warning{background-color:#ff9800}.progress-bar-danger{background-color:#e51c23}
 .contact-form .textarea{min-height:220px;resize:none}#info{background:#343434;color:#fff}
+
 #info h4{margin-top:0;font-size:26px;color:#fff;font-weight:300}
 #info p{color:#fff;font-size:14px}footer{padding:20px 0;background:#333;width:100%;float:left}footer 
-.design-by{font-size:13px;color:#888;text-align:right}
+.design-by{font-size:13px;color:#fff;text-align:right}
+
 @media (min-width:1200px)
 	{.container{width:970px}}
 @media (max-width:768px)
@@ -116,15 +122,20 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 	.portfolio-grid .hover-text{padding-top:70px;left:0!important}
 	.portfolio-grid .thumbnail img{height:313px;width:100%}
 	.portfolio-grid .hide-none{height:313px!important;width:100%!important}
-	#banner h2{font-size:36px}
-	#banner h1 .mdicon{font-size:120px}#banner p{font-size:20px}
+	
+    #banner h2{font-size:36px}
+	#banner h1 .mdicon{font-size:120px}
+    #banner p{font-size:20px}
+        
 	section h2.heading{font-size:36px;color:#333;font-weight:300;line-height:36px;margin-bottom:30px;margin-top:0}}
+
 @media (max-width:340px)
 	{.navbar-default .navbar-brand img{width:180px}
 	.navbar-default .navbar-toggle{padding-top:0}
-	#banner .container .intro{position:absolute;width:250px;top:95px;left:25px}
+        
+	#banner .container .intro .introBottom{position:absolute;width:250px;top:95px;left:25px}
 	.portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
-	#banner .container .intro{margin-top:50px}
+	#banner .container .intro .introBottom{margin-top:50px}
 	#banner h2{font-size:28px}
 	#banner p{font-size:14px}
 	.portfolio-grid .hide-none{height:206px!important;width:100%!important}}
