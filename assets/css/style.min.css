@@ -133,7 +133,7 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 	{.navbar-default .navbar-brand img{width:180px}
 	.navbar-default .navbar-toggle{padding-top:0}
         
-	#banner .container .intro .introBottom{position:absolute;width:250px;top:95px;left:25px}
+	#banner .container .intro .introBottom{position:absolute;width:250px;top:50px;left:25px}
 	.portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
 	#banner .container .intro .introBottom{margin-top:50px}
 	#banner h2{font-size:28px}
