@@ -134,7 +134,7 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 	{.navbar-default .navbar-brand img{width:180px}
 	.navbar-default .navbar-toggle{padding-top:0}
      
-    .introBottom {position:absolute;width:250px; left:25px; margin-top:100px;}    
+    .introBottom {width:250px; left:25px; margin-top:100px;}    
         
 	#banner .container .intro {position:absolute;width:250px;top:50px;left:25px}
     .portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
