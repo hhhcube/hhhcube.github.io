@@ -101,6 +101,7 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 #info p{color:#fff;font-size:14px}footer{padding:20px 0;background:#333;width:100%;float:left}footer 
 .design-by{font-size:13px;color:#fff;text-align:right}
 
+/* Screen size settings*/
 @media (min-width:1200px)
 	{.container{width:970px}}
 @media (max-width:768px)
@@ -133,9 +134,10 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 	{.navbar-default .navbar-brand img{width:180px}
 	.navbar-default .navbar-toggle{padding-top:0}
         
-	#banner .container .intro .introBottom{position:absolute;width:250px;top:50px;left:25px}
+	#banner .container .intro {position:absolute;width:250px;top:50px;left:25px}
+        .introBottom {position:absolute;width:250px; left:25px}
 	.portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
-	#banner .container .intro .introBottom{margin-top:50px}
+	#banner .container .intro {margin-top:50px}
 	#banner h2{font-size:28px}
 	#banner p{font-size:14px}
 	.portfolio-grid .hide-none{height:206px!important;width:100%!important}}
