@@ -133,10 +133,11 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 @media (max-width:340px)
 	{.navbar-default .navbar-brand img{width:180px}
 	.navbar-default .navbar-toggle{padding-top:0}
+     
+    .introBottom {position:absolute;width:250px; left:25px; margin-top:50px;}    
         
 	#banner .container .intro {position:absolute;width:250px;top:50px;left:25px}
-        .introBottom {position:absolute;width:250px; left:25px; top:50px;}
-	.portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
+    .portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
 	#banner .container .intro {margin-top:50px}
 	#banner h2{font-size:28px}
 	#banner p{font-size:14px}
