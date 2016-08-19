@@ -46,6 +46,7 @@
 .nivo-lightbox-theme-default .nivo-lightbox-close:hover { opacity: 1; }
 
 .nivo-lightbox-theme-default .nivo-lightbox-title-wrap { bottom: -7%; }
+
 .nivo-lightbox-theme-default .nivo-lightbox-title {
 	font-size:5px;
 	font-style: normal;
@@ -56,6 +57,7 @@ border-color: #0064e8; color:#fff;
 }
 
 .nivo-lightbox-theme-default .nivo-lightbox-image img {
+    
 	background: #fff;
 	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
 	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
