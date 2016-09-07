@@ -1,14 +1,37 @@
 #goodat{padding-top:10px}
 
-.myimage {
-  background: transparent url("Rock-Climbing-.jpg") no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
-  height: 500px;
-}
 
 .otherColor{
     color:#ffdae0;
 }
+
+.customWidth1{
+    width: 50%;
+}
+
+.centerItem{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconSpacing{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.myFonts{
+    font-size: 18px;
+}
+
+.spacer{
+    margin-top: 50px;
+}
+li{
+    padding: 5px;
+    font-size: 20px;
+    font-style: oblique;
+    color:white;
+}
+.whitefonts h3{color: white;}
+.whitefonts p {color: white;}

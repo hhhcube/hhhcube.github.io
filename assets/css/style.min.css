@@ -1,6 +1,9 @@
-body{text-rendering:optimizelegibility;background:#d5dee7;font-family:Roboto,sans-serif;overflow:hidden}
+body{text-rendering:optimizelegibility;background:#d5dee7;font-family:Roboto Slab,sans-serif;overflow:hidden}
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,hs3,h4,h5,h6{font-family:Roboto,sans-serif}
-p{color:#333}
+
+p{color:#333; margin-bottom: 20px;}
+
+
 a,a:hover{color:#e91e63}
 a:focus{outline:0}
 #preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:99}
@@ -64,19 +67,30 @@ a:focus{outline:0}
 #banner .container .intro {margin-top:150px}
 
 #about{background-color:#fff}
+.libackgroundcolor{background-image:url(../images/learningtoprogram.png)
+
+}
 .sectionIcon{background:0 0;top:-66px;font-size:66px;color:#fff}
+
 /*Heading fonts for the different sections*/
 section h2.heading{font-size:48px;color:#333;font-weight:300;line-height:36px;margin-bottom:50px;margin-top:0}
 section h3 .helping-text{font-size:20px;color:#888;font-weight:300;margin:0 0 30px;line-height:36px}
 section p{font-size:18px}
+
+
 /*padding for all sections 70px top 50px bottom between all*/
 section{position:relative;padding:70px 0 50px;text-align:center}
+
 /*parallax portfolio-grid*/
 #parallax-1{padding:0;background-image:url(../images/parallax-2.jpg)}
 #parallax-1 .color-overlay{padding:50px 0}
 #parallax-2{padding:50px 0;background-image:url(../images/parallax.jpg)}
 .bgParallax h2.heading{color:#fff;margin-bottom:25px}
+
 #services{background:#f2f2f2}
+#motivations{background-color:#fff}
+/* #motivations p{font-size: 14px} */
+
 .portfolio-grid .thumbnail{margin-bottom:30px;border-radius:0;border:none;padding:0}
 .portfolio-grid .thumbnail img{height:213px;border:none;border-radius:0;padding:0}.drop-panel{padding:0!important}
 /*overlay background*/
@@ -90,8 +104,8 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 .social li a{font-size:24px;color:#fff}
 .social li a .mdicon{font-size:48px;line-height:48px}
 .social li a:hover{color:#e91e63}
-#motivations{background-color:#fff}
-#motivations p{font-size: 14px}
+
+ 
 
 .progress-bar-success{background-color:#259b24}.progress-bar-info{background-color:#3f51b5}
 .progress-bar-warning{background-color:#ff9800}.progress-bar-danger{background-color:#e51c23}
