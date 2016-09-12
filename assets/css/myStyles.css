@@ -1,4 +1,4 @@
-#goodat{padding-top:10px}
+.contentSpace{padding-top:20px}
 
 
 .otherColor{
@@ -35,3 +35,5 @@ li{
 }
 .whitefonts h3{color: white;}
 .whitefonts p {color: white;}
+.whiteFont{color: white;}
+.fonthighlight{font-size: 18px; font-synthesis: weight;}
