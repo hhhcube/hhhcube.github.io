@@ -1,3 +1,13 @@
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px){
+     .vcenter{
+        display: block; /* turn off the flexible box layout */
+    }
+}
+
 .contentSpace{padding-top:20px}
 
 
