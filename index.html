@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web Dev coder. Ready to Conquer the world">
-    <meta name="author" content="Humphrey Hills">
+    <meta name="description" content="WordPress, Web Deveveloper Coder.">
+    <meta name="author" content="Humphrey Hills Web Developere">
                     <!-- need to change the favicon 64 x 64 -->
     <link rel="icon" href="assets/icons/favicon.ico">
-    <title>HumphreyHills</title>
+    <title>Humphrey Hills Web Developer</title>
     
         <!-- Need to minimize assets -->
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab:400,300,100,500,700,900' rel='stylesheet' type='text/css'>    
     <!-- Custom styles for this template -->
     <link href="assets/MDicons/css/MDicon.min.css" rel="stylesheet">
@@ -277,19 +278,25 @@
         <div class="row">
             <h2 class="heading wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">Contact</h2>
             <div class="col-md-12">
-            	<form  action="https://formspree.io/humphrey.hill@gmail.com" method="POST" role="form" id="contact-form" class="contact-form">
+            	<form  id="gform" action="https://script.google.com/macros/s/AKfycbz3-Julluq9ZAI4RbmbPEvMjSC8rLeJddq_---fAwM0WUuHj-Q/exec" method="POST" role="form" id="contact-form" class="contact-form">
                 	<div class="row">
                 		<div class="col-md-6 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
-                  		<div class="form-group">
+                  		  <div class="form-group">
                             <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
-                  		</div>
-                  	</div>
-                    	<div class="col-md-6 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
-                  		<div class="form-group">
+                  		  </div>
+                  	    </div>
+                        <div class="col-md-6 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
+                  		  <div class="form-group">
                             <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
-                  		</div>
+                  		  </div>
+                  	    </div>
+                        <div class="col-md-12 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
+                          <div class="form-group">
+                             <input type="text" class="form-control" name="website" autocomplete="off" id="website" placeholder="Web Address">
+                         </div>
+                        </div>
                   	</div>
-                  	</div>
+                    <!--  -->
                   	<div class="row">
                   		<div class="col-md-12 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
                   		<div class="form-group">
@@ -299,11 +306,18 @@
                     </div>
                     <div class="row">
                     <div class="col-md-12">
-                  <!-- Need to set up form for auto submit in java module-->
-                  <button type="submit" class="btn main-btn pull-right wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">Send a message</button>
+                  <!-- Submit button-->
+                   <button type="submit" class="btn main-btn pull-right wow bounceIn" data-wow-duration="1s" data-wow-delay="1s"><i class="icon-share-alt"></i>&nbsp;Send a message</button>
                   </div>
                   </div>
                 </form>
+                
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting me!
+      I will contact you soon!</h2>
+</div>
+                
 			</div>
             
         </div>
@@ -361,6 +375,8 @@
     <!-- Placed at the end of the document so the pages load faster --> 
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/bootstrap.min.js"></script>
+    
+    
     <!-- smooth scrolling -->
     <script src="assets/js/smooth-scroll.js"></script>
     
@@ -378,6 +394,10 @@
     
     <!-- animation scrolling -->
     <script src="assets/js/app.min.js"></script>
+    
+    <!--  prevent the page from changing to the JSON response/result we need to submit the form using AJAX -->
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P83GDR"
