@@ -39,11 +39,12 @@ h1,h2,h3{font-weight: bold;}
 .spacer{
     margin-top: 50px;
 }
-.liStyles{
+ul li{
     padding: 5px;
     font-size: 25px;
     font-style: italic;
     /*font-synthesis: weight;*/
+    
     line-height: 2.45;
     
 }
