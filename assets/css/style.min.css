@@ -65,7 +65,7 @@ a:focus{outline:0}
 #banner p{font-size:20px;font-weight:300;color:#fff}
 #banner .container{position:relative}
  /*Margin for block on banner*/
-#banner .container .intro {margin-top:150px}
+#banner .intro {margin-top:150px}
 
 #about{background-color:#fff}
 .libackgroundcolor{background-image:url(../images/learningtoprogram.png)
