@@ -152,7 +152,7 @@ section{position:relative;padding:70px 0 50px;text-align:center}
 	.navbar-default .navbar-toggle{padding-top:0}
    	#banner .container .intro {position:absolute;width:250px;top:25px;left:25px}
        
-    /*.intro h3{font-size: 16px}*/
+    intro h3{font-size: 14px}
         
     .portfolio-grid .hover-text{padding-top:60px}.portfolio-grid .thumbnail img{height:206px;width:100%}
 	#banner .container .intro {margin-top:25px}
