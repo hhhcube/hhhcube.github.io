@@ -39,7 +39,7 @@ h1,h2,h3{font-weight: bold;}
 .spacer{
     margin-top: 50px;
 }
-li{
+.list-group ul li{
     padding: 5px;
     font-size: 25px;
     font-style: italic;
