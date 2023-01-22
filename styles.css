@@ -50,3 +50,22 @@ header .nav-link {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+
+/* Navbar Styles */
+header .navbar {
+    padding: 20px;
+}
+
+header .navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+header .nav-link {
+    padding: 10px 15px;
+}
