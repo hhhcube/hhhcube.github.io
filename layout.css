@@ -1,0 +1,41 @@
+/* Flexbox container for the entire website */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox container for the home section */
+#home .flex-container {
+    flex-direction: column;
+}
+
+/* Flexbox container for the about section */
+#about .flex-container {
+    flex-direction: row;
+}
+
+/* Flexbox container for the services section */
+#services .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Flexbox container for the portfolio section */
+#portfolio .flex-container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Flexbox container for the blog section */
+#blog .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Flexbox container for the contact section */
+#contact .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
