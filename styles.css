@@ -64,6 +64,7 @@ header .navbar-nav {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    background-color: red;
 }
 
 header .nav-link {
