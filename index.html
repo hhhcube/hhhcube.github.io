@@ -4,7 +4,9 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+        <meta name="author" content="Humphrey Hills" />
+        <meta name="description" content="This website is dedicated to learning and sharing and demonstrating my
+        abilities and how I can help cmpanies and individuals improve their web presence and reach"/>
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
@@ -65,67 +67,57 @@
             </div>
             <!-- Hero -->
         </header>
-        <section id="about">
-            <div class="container">
-                <div class="row">
+        <main class="container p-5">
+            <article id="about" class="container p-5">
+               <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>About Me</h2>
+                        <h1>About Me</h1>
                         <p>I am a data analyst and web developer with experience in Python programming, JavaScript, CSS, and HTML. I have a passion for using data to solve problems and create intuitive and visually appealing websites.
                         </p>
                         <p>In my free time, I enjoy learning new technologies and staying up to date with the latest industry trends. I am also an avid reader and enjoy exploring the great outdoors.</p>
                         <a href="#services" class="btn btn-primary">Learn more</a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="services">
-            <div class="container">
+            </article>
+            <section id="my-services" class="container p-5">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>My Services</h2>
-                        <p>I offer a wide range of services to help businesses and individuals achieve their goals through data analytics and web development.</p>
-                    </div>
-                </div>
-                <div class="row flex-container">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Data Analytics</h4>
-                                <p class="card-text">I can help you collect, analyze, and visualize your data to gain insights and make informed decisions.</p>
+                    <article id="services" class="container p-5">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>My Services</h2>
+                                <p>I offer a wide range of services to help businesses and individuals achieve their goals through data analytics and web development.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
+                    </article>
+                    <article id="data-analytics" class="col">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Data Analytics</h4>
+                                    <p class="card-text">I can help you collect, analyze, and visualize your data to gain insights and make informed decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="web-dev" class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Web Development</h4>
                                 <p class="card-text">I can help you design and build beautiful, responsive, and functional websites that are optimized for search engines.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Digital Marketing with Data Analytics</h4>
-                            <p class="card-text">I can help you leverage data analytics to create effective digital marketing strategies, track your performance, and optimize your campaigns for better results.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-            <section id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>About Me</h2>
-                            <p>I am a data analyst and web developer with experience in Python programming, JavaScript, CSS, and HTML. I have a passion for using data to solve problems and create intuitive and visually appealing websites.
-                            </p>
-                            <p>In my free time, I enjoy learning new technologies and staying up to date with the latest industry trends. I am also an avid reader and enjoy exploring the great outdoors.</p>
-                            <a href="#services" class="btn btn-primary">Learn more</a>
+                    </article>
+                    <article id="digi-analytics" class="col">
+                        <div class="col">
+                            <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Digital Marketing with Data Analytics</h4>
+                                <p class="card-text">I can help you leverage data analytics to create effective digital marketing strategies, track your performance, and optimize your campaigns for better results.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
-            <section id="portfolio">
+            <article id="portfolio" class="container p-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -135,8 +127,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="blog">
+            </article>
+            <article id="blog" class="container p-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -146,8 +138,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="contact">
+            </article>
+            <article id="contact" class="container p-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -168,119 +160,120 @@
                             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                         </fieldset>
                         <input type="submit" value="Submit">
-                </form>
-                <style>/* reset */
-                        #fs-frm input,
-                        #fs-frm select,
-                        #fs-frm textarea,
-                        #fs-frm fieldset,
-                        #fs-frm optgroup,
-                        #fs-frm label,
-                        #fs-frm #card-element:disabled {
-                        font-family: inherit;
-                        font-size: 100%;
-                        color: inherit;
-                        border: none;
-                        border-radius: 0;
-                        display: block;
-                        width: 100%;
-                        padding: 0;
-                        margin: 0;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        }
-                        #fs-frm label,
-                        #fs-frm legend,
-                        #fs-frm ::placeholder {
-                        font-size: .825rem;
-                        margin-bottom: .5rem;
-                        padding-top: .2rem;
-                        display: flex;
-                        align-items: baseline;
-                        }
+                    </form>
+                    <style>/* reset */
+                            #fs-frm input,
+                            #fs-frm select,
+                            #fs-frm textarea,
+                            #fs-frm fieldset,
+                            #fs-frm optgroup,
+                            #fs-frm label,
+                            #fs-frm #card-element:disabled {
+                            font-family: inherit;
+                            font-size: 100%;
+                            color: inherit;
+                            border: none;
+                            border-radius: 0;
+                            display: block;
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            }
+                            #fs-frm label,
+                            #fs-frm legend,
+                            #fs-frm ::placeholder {
+                            font-size: .825rem;
+                            margin-bottom: .5rem;
+                            padding-top: .2rem;
+                            display: flex;
+                            align-items: baseline;
+                            }
 
-                        /* border, padding, margin, width */
-                        #fs-frm input,
-                        #fs-frm select,
-                        #fs-frm textarea,
-                        #fs-frm #card-element {
-                        border: 1px solid rgba(0,0,0,0.2);
-                        background-color: rgba(255,255,255,0.9);
-                        padding: .75em 1rem;
-                        margin-bottom: 1.5rem;
-                        }
-                        #fs-frm input:focus,
-                        #fs-frm select:focus,
-                        #fs-frm textarea:focus {
-                        background-color: white;
-                        outline-style: solid;
-                        outline-width: thin;
-                        outline-color: gray;
-                        outline-offset: -1px;
-                        }
-                        #fs-frm [type="text"],
-                        #fs-frm [type="email"] {
-                        width: 100%;
-                        }
-                        #fs-frm [type="button"],
-                        #fs-frm [type="submit"],
-                        #fs-frm [type="reset"] {
-                        width: auto;
-                        cursor: pointer;
-                        -webkit-appearance: button;
-                        -moz-appearance: button;
-                        appearance: button;
-                        }
-                        #fs-frm [type="button"]:focus,
-                        #fs-frm [type="submit"]:focus,
-                        #fs-frm [type="reset"]:focus {
-                        outline: none;
-                        }
-                        #fs-frm [type="submit"],
-                        #fs-frm [type="reset"] {
-                        margin-bottom: 0;
-                        }
-                        #fs-frm select {
-                        text-transform: none;
-                        }
+                            /* border, padding, margin, width */
+                            #fs-frm input,
+                            #fs-frm select,
+                            #fs-frm textarea,
+                            #fs-frm #card-element {
+                            border: 1px solid rgba(0,0,0,0.2);
+                            background-color: rgba(255,255,255,0.9);
+                            padding: .75em 1rem;
+                            margin-bottom: 1.5rem;
+                            }
+                            #fs-frm input:focus,
+                            #fs-frm select:focus,
+                            #fs-frm textarea:focus {
+                            background-color: white;
+                            outline-style: solid;
+                            outline-width: thin;
+                            outline-color: gray;
+                            outline-offset: -1px;
+                            }
+                            #fs-frm [type="text"],
+                            #fs-frm [type="email"] {
+                            width: 100%;
+                            }
+                            #fs-frm [type="button"],
+                            #fs-frm [type="submit"],
+                            #fs-frm [type="reset"] {
+                            width: auto;
+                            cursor: pointer;
+                            -webkit-appearance: button;
+                            -moz-appearance: button;
+                            appearance: button;
+                            }
+                            #fs-frm [type="button"]:focus,
+                            #fs-frm [type="submit"]:focus,
+                            #fs-frm [type="reset"]:focus {
+                            outline: none;
+                            }
+                            #fs-frm [type="submit"],
+                            #fs-frm [type="reset"] {
+                            margin-bottom: 0;
+                            }
+                            #fs-frm select {
+                            text-transform: none;
+                            }
 
-                        #fs-frm [type="checkbox"] {
-                        -webkit-appearance: checkbox;
-                        -moz-appearance: checkbox;
-                        appearance: checkbox;
-                        display: inline-block;
-                        width: auto;
-                        margin: 0 .5em 0 0 !important;
-                        }
+                            #fs-frm [type="checkbox"] {
+                            -webkit-appearance: checkbox;
+                            -moz-appearance: checkbox;
+                            appearance: checkbox;
+                            display: inline-block;
+                            width: auto;
+                            margin: 0 .5em 0 0 !important;
+                            }
 
-                        #fs-frm [type="radio"] {
-                        -webkit-appearance: radio;
-                        -moz-appearance: radio;
-                        appearance: radio;
-                        }
+                            #fs-frm [type="radio"] {
+                            -webkit-appearance: radio;
+                            -moz-appearance: radio;
+                            appearance: radio;
+                            }
 
-                        /* address, locale */
-                        #fs-frm fieldset.locale input[name="city"],
-                        #fs-frm fieldset.locale select[name="state"],
-                        #fs-frm fieldset.locale input[name="postal-code"] {
-                        display: inline;
-                        }
-                        #fs-frm fieldset.locale input[name="city"] {
-                        width: 52%;
-                        }
-                        #fs-frm fieldset.locale select[name="state"],
-                        #fs-frm fieldset.locale input[name="postal-code"] {
-                        width: 20%;
-                        }
-                        #fs-frm fieldset.locale input[name="city"],
-                        #fs-frm fieldset.locale select[name="state"] {
-                        margin-right: 3%;
-                        }
+                            /* address, locale */
+                            #fs-frm fieldset.locale input[name="city"],
+                            #fs-frm fieldset.locale select[name="state"],
+                            #fs-frm fieldset.locale input[name="postal-code"] {
+                            display: inline;
+                            }
+                            #fs-frm fieldset.locale input[name="city"] {
+                            width: 52%;
+                            }
+                            #fs-frm fieldset.locale select[name="state"],
+                            #fs-frm fieldset.locale input[name="postal-code"] {
+                            width: 20%;
+                            }
+                            #fs-frm fieldset.locale input[name="city"],
+                            #fs-frm fieldset.locale select[name="state"] {
+                            margin-right: 3%;
+                            }
                     </style>
                 </div>
-            </section>
-            <!--   May not need this below code.           -->
-            <script src="form-validation.js"></script>
+            </article>
+        </main>
+        <!--   May not need this below code.           -->
+        <script src="form-validation.js"></script>
             
             <!-- Separate Popper and Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
