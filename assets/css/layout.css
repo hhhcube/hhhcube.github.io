@@ -1,9 +1,11 @@
 /* Flexbox container for the entire website */
 body{
-    display: grid;
     overflow-x: hidden;
 }
-.flex-container {
+.grid-container {
+    display: grid;
+}
+/* .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,30 +18,30 @@ body{
 } */
 
 /* Flexbox container for the about section */
-#about .flex-container {
+/* #about .flex-container {
     flex-direction: row;
 }
 
 /* Flexbox container for the services section */
-#services .flex-container {
+/* #services .flex-container {
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 /* Flexbox container for the portfolio section */
-#portfolio .flex-container {
+/* #portfolio .flex-container {
     flex-direction: row;
     justify-content: space-around;
-}
+} */
 
 /* Flexbox container for the blog section */
-#blog .flex-container {
+/* #blog .flex-container {
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 /* Flexbox container for the contact section */
-#contact .flex-container {
+/* #contact .flex-container {
     flex-direction: column;
     align-items: center;
-}
+/* } */ 

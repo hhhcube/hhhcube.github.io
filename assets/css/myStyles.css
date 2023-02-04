@@ -13,9 +13,6 @@ body {
 }
 
 /* Navbar Styles */
-header .navbar {
-    padding: 20px;
-}
 .navbar-light {
     color: hsl(35, 38.2%, 22.4%);
 }
