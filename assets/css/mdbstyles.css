@@ -1,0 +1,9 @@
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+    z-index: -9999;
+  }
+  

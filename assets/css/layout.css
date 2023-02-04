@@ -1,4 +1,8 @@
 /* Flexbox container for the entire website */
+body{
+    display: grid;
+    overflow-x: hidden;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -7,9 +11,9 @@
 }
 
 /* Flexbox container for the home section */
-#home .flex-container {
+/* #home .flex-container {
     flex-direction: column;
-}
+} */
 
 /* Flexbox container for the about section */
 #about .flex-container {
