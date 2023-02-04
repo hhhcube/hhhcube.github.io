@@ -1,31 +1,19 @@
+/* Global Body styles */
 body {
-    font-family: 'Merriweather', serif;
     background-color: hsl(0, 0%, 95%);
 }
-.text-theme {
-    color: hsl(35, 38.2%, 22.4%)
-}
-.bg-theme-light {
-    background-color: hsl(35, 37.5%, 95.2%);
-}
-.bg-theme-dark {
-    background-color: hsl(35, 38.25%, 22.4%) !important;
-}
 
-/* Navbar Styles */
-.navbar-light {
-    color: hsl(35, 38.2%, 22.4%);
+.active{
+    background-color: aqua;
 }
-.navbar-light .nav-item .nav-li {
-    color: hsl(35, 38.2%, 22.4%)
-}
+ 
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Code Pro', monospace;
 }
 
 a {
-    color: #2c3e50;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -33,28 +21,20 @@ a:hover {
     color: #e74c3c;
 }
 
-/* Header Styles */
-header .navbar-brand {
-    color: #ffffff;
-}
 
-header .nav-link {
-    color: #ffffff;
-}
-/* Home Styles */
 #home {
     margin-top: 150px;
     text-align: center;
 }
 
 #home h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    /* margin-bottom: 20px; */
 }
 
 #home p {
     font-size: 24px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
