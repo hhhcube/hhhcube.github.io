@@ -5,6 +5,28 @@ body{
 .grid-container {
     display: grid;
 }
+
+.grid-container-branding {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: auto auto;
+}
+html {
+    /*For smooth scrolling behavior*/
+    scroll-behavior: smooth;
+}
+
+#home,
+#section1,
+#section2,
+#section3,
+#section4 {
+    height: 70vh;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
 /* .flex-container {
     display: flex;
     flex-wrap: wrap;
