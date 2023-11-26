@@ -1,370 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
-        
-        <!-- Meta descriptions -->
-        <meta name="author" content="Humphrey Hills" />
-        <meta name="description" content="This website is dedicated to learning and sharing and demonstrating my
-        abilities and how I can help cmpanies and individuals improve their web presence and reach"/>
-        <title>My Data Analytics and Web Development Website</title>
-        
-        <!-- Favicon -->
-        <link href="/assets/images/brand/favicon.png" rel="icon" type="image/png">
-        
-         <!-- Fonts -->
-         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
-         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
-         
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
-        
-        <!-- Icons -->
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcasing my expertise in FastAPI, Data Collection, Data Analytics, and Forex Trading">
+    <title>Humphrey Hills - FastAPI & Forex Expert</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/myStyles.css">
+</head>
 
-        <!-- Style Sheets -->
-        <link rel="stylesheet" href="assets/css/Mystyles.css">
-        <link rel="stylesheet" href="assets/css/layout.css">
-        <link rel="stylesheet" href="assets/css/mdbstyles.css">
-    </head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">H. Hills</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Body -->
-    <body class="grid-container">
-        <!-- Header -->
-        <header>
-            <section class="container grid-item" id="navigation">
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow p-3 mb-5 bg-body rounded w-75 p-3 container-fluid w-75 p-3">
-                    <!-- Container wrapper -->
-                    <div class="grid-container-branding">
-                        <!-- Toggle button -->
-                        <button 
-                            class="navbar-toggler" 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#navbarNav" 
-                            aria-controls="navbarNav" 
-                            aria-expanded="false" 
-                            aria-label="Toggle navigation"
-                        >
-                            <i class="=fas fa-bars"></i>
-                        </button>
-                        <!-- Navbar brand-->
-                        <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                            <i class="fas fa-globe-africa"></i>
-                        </a>
-                    </div>   
-                    <!-- Collapsible wraper -->
-                    <div class=" navbar-default collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
-                        <!-- right elements-->
-                        <ul class="navbar-nav ms-auto flex-nowrap">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active" aria-current="page">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#services" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#portfolio" class="nav-link">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#blog" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Nav End-->
-            </section>
-        </header>
-        <!-- Main -->
-        <main>
-            <!-- Home -->
-            <section id="home" class="container p-5 page-section">
-                <div class="d-flex algign-itmes-center justify-content-center">
-                    <div class="text-center">
-                        <h1 class="text-uppercase fw-bold">
-                            Humphrey Hills Data Analytics & Programming
-                        </h1>
-                        <div>
-                            <a
-                                href ="#section-content"
-                                role="button"
-                                class="btn btn-primary bg-theme-dark btn-lg px-5 py-2"
-                            >
-                                Button
-                            </a>
-                        </div>
-                    </div>
+    <div class="container py-5" id="home">
+        <!-- Hero Section -->
+        <section id="hero" class="py-5">
+            <div class="container">
+                <h1 class="display-4">Welcome to My Professional Space</h1>
+                <p class="lead">Expert in FastAPI Development, Data Analysis, and Forex Trading</p>
+            </div>
+        </section>
+        <!-- Home Section -->
+        <section id="home" class="py-5">
+            <div class="container">
+                <h1 class="display-4">Welcome to My Home Page</h1>
+                <p>Here you'll find information about my projects, skills, and professional interests.</p>
+                <!-- Additional content for the Home section -->
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a dedicated professional specializing in web technology and financial markets. My expertise lies in FastAPI development, comprehensive data analytics, and strategic Forex trading.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>FastAPI Development</h3>
+                    <p>Building robust and scalable APIs for diverse applications.</p>
                 </div>
-            </section>
-            <!-- About -->            
-            <section id="about" class="container p-5 page-section">
-                <div class="col-lg-12 text-center">
-                    <h1>About Me</h1>
-                    <p>I am a data analyst and web developer with experience in Python programming, JavaScript, CSS, and HTML. I have a passion for using data to solve problems and create intuitive and visually appealing websites.
-                    </p>
-                    <p>In my free time, I enjoy learning new technologies and staying up to date with the latest industry trends. I am also an avid reader and enjoy exploring the great outdoors.</p>
-                    <div>
-                        <a href="#services" class="btn btn-primary">Learn more</a>
-                    </div>
+                <div class="col-md-4">
+                    <h3>Data Collection & Analysis</h3>
+                    <p>Expertise in gathering and interpreting complex data sets.</p>
                 </div>
-            </section>
-            <!-- Services -->
-            <section id="services" class="container p-5 page-section">
-                <div class="row">
-                    <div id="services" class="container p-5">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>My Services</h2>
-                                <p>I offer a wide range of services to help businesses and individuals achieve their goals through data analytics and web development.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="data-analytics" class="col">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Data Analytics</h4>
-                                    <p class="card-text">I can help you collect, analyze, and visualize your data to gain insights and make informed decisions.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="web-dev" class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Web Development</h4>
-                                <p class="card-text">I can help you design and build beautiful, responsive, and functional websites that are optimized for search engines.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="digi-analytics" class="col">
-                        <div class="col">
-                            <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Digital Marketing with Data Analytics</h4>
-                                <p class="card-text">I can help you leverage data analytics to create effective digital marketing strategies, track your performance, and optimize your campaigns for better results.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <h3>Forex Trading Strategies</h3>
+                    <p>Developing and testing profitable Forex trading strategies.</p>
                 </div>
-            </section>
-            <!-- Portfolio -->
-            <section id="portfolio" class="container p-5 page-section">
-                <div class="col-lg-12 text-center">
-                    <h2>My Portfolio</h2>
-                    <p>Welcome to my portfolio! I am currently working hard to showcase some of my best projects here. Please check back soon for updates.</p>
-                    <p>In the meantime, feel free to explore the rest of my website and learn more about my skills and experience.</p>
-                </div>
-            </section>
-            <!-- Blog -->
-            <section id="blog" class="container p-5 page-section">
-               <div class="col-lg-12 text-center">
-                    <h2>My Blog</h2>
-                    <p>Welcome to my blog! I am currently working hard to share my thoughts, tips, and experiences on data analytics and web development. Please check back soon for updates.</p>
-                    <p>In the meantime, feel free to explore the rest of my website and learn more about my skills and experience.</p>
-                </div>
-            </section>
-            <!-- Contact -->
-            <section id="contact" class="container p-5 page-section">
-                <div class="container">
-                    <div class="col-lg-12 text-center">
-                        <h2>Contact Me</h2>
-                        <p>If you have any questions or would like to discuss a project, please don't hesitate to contact me.</p>
-                    </div>
-                </div>
-                <!-- Contact Me-->
-                <div class="container">
-                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqzvrbo" method="post">
-                        <fieldset id="fs-frm-inputs">
-                            <label for="full-name">Full Name</label>
-                            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-                            <label for="email-address">Email Address</label>
-                            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-                            <label for="message">Message</label>
-                            <textarea rows="5" name="message" id="message" placeholder="Place your message here" required=""></textarea>
-                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                        </fieldset>
-                        <input type="submit" value="Submit">
-                    </form>
-                    <style>/* reset */
-                            #fs-frm input,
-                            #fs-frm select,
-                            #fs-frm textarea,
-                            #fs-frm fieldset,
-                            #fs-frm optgroup,
-                            #fs-frm label,
-                            #fs-frm #card-element:disabled {
-                            font-family: inherit;
-                            font-size: 100%;
-                            color: inherit;
-                            border: none;
-                            border-radius: 0;
-                            display: block;
-                            width: 100%;
-                            padding: 0;
-                            margin: 0;
-                            -webkit-appearance: none;
-                            -moz-appearance: none;
-                            }
-                            #fs-frm label,
-                            #fs-frm legend,
-                            #fs-frm ::placeholder {
-                            font-size: .825rem;
-                            margin-bottom: .5rem;
-                            padding-top: .2rem;
-                            display: flex;
-                            align-items: baseline;
-                            }
+            </div>
+        </div>
+    </section>
 
-                            /* border, padding, margin, width */
-                            #fs-frm input,
-                            #fs-frm select,
-                            #fs-frm textarea,
-                            #fs-frm #card-element {
-                            border: 1px solid rgba(0,0,0,0.2);
-                            background-color: rgba(255,255,255,0.9);
-                            padding: .75em 1rem;
-                            margin-bottom: 1.5rem;
-                            }
-                            #fs-frm input:focus,
-                            #fs-frm select:focus,
-                            #fs-frm textarea:focus {
-                            background-color: white;
-                            outline-style: solid;
-                            outline-width: thin;
-                            outline-color: gray;
-                            outline-offset: -1px;
-                            }
-                            #fs-frm [type="text"],
-                            #fs-frm [type="email"] {
-                            width: 100%;
-                            }
-                            #fs-frm [type="button"],
-                            #fs-frm [type="submit"],
-                            #fs-frm [type="reset"] {
-                            width: auto;
-                            cursor: pointer;
-                            -webkit-appearance: button;
-                            -moz-appearance: button;
-                            appearance: button;
-                            }
-                            #fs-frm [type="button"]:focus,
-                            #fs-frm [type="submit"]:focus,
-                            #fs-frm [type="reset"]:focus {
-                            outline: none;
-                            }
-                            #fs-frm [type="submit"],
-                            #fs-frm [type="reset"] {
-                            margin-bottom: 0;
-                            }
-                            #fs-frm select {
-                            text-transform: none;
-                            }
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <!-- Portfolio items here -->
+        </div>
+    </section>
 
-                            #fs-frm [type="checkbox"] {
-                            -webkit-appearance: checkbox;
-                            -moz-appearance: checkbox;
-                            appearance: checkbox;
-                            display: inline-block;
-                            width: auto;
-                            margin: 0 .5em 0 0 !important;
-                            }
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <!-- Contact form fields -->
+            </form>
+        </div>
+    </section>
 
-                            #fs-frm [type="radio"] {
-                            -webkit-appearance: radio;
-                            -moz-appearance: radio;
-                            appearance: radio;
-                            }
+    <!-- Footer -->
+    <footer class="py-3 bg-light">
+        <div class="container text-center">
+            <p>&copy; [Current Year] [Your Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-                            /* address, locale */
-                            #fs-frm fieldset.locale input[name="city"],
-                            #fs-frm fieldset.locale select[name="state"],
-                            #fs-frm fieldset.locale input[name="postal-code"] {
-                            display: inline;
-                            }
-                            #fs-frm fieldset.locale input[name="city"] {
-                            width: 52%;
-                            }
-                            #fs-frm fieldset.locale select[name="state"],
-                            #fs-frm fieldset.locale input[name="postal-code"] {
-                            width: 20%;
-                            }
-                            #fs-frm fieldset.locale input[name="city"],
-                            #fs-frm fieldset.locale select[name="state"] {
-                            margin-right: 3%;
-                            }
-                    </style>
-                </div>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer></footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare"></script>
 
-        
-        <!--   May not need this below code.           -->
-        <script src="form-validation.js"></script>
-            
-        <!-- Three.js core -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <script type="text/javascript" src="assets/js/three-js-setup.js"></script>
-        
-        <!-- JavaScript code -->
-        <!-- Changing active link on scroll and click -->
-        <script>
-            /* Code for changing active link on clicking */
-            var btns = 
-                $("#navigation .navbar-nav .nav-link");
-  
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click",
-                                      function () {
-                    var current = document
-                        .getElementsByClassName("active");
-  
-                    current[0].className = current[0]
-                        .className.replace(" active", "");
-  
-                    this.className += " active";
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+    
+            function onNavItemClick() {
+                // Remove 'active' class from all nav items
+                navItems.forEach(item => {
+                    item.classList.remove('active');
                 });
+    
+                // Add 'active' class to the clicked nav item
+                this.classList.add('active');
             }
-  
-            /* Code for changing active link on Scrolling */
-            $(window).scroll(function () {
-                var distance = $(window).scrollTop();
-                $('.page-section').each(function (i) {
-  
-                    if ($(this).position().top 
-                        <= distance + 250) {
-                          
-                            $('.navbar-nav a.active')
-                                .removeClass('active');
-  
-                            $('.navbar-nav a').eq(i)
-                                .addClass('active');
+    
+            navItems.forEach(item => {
+                item.addEventListener('click', onNavItemClick);
+            });
+    
+            // Optional: If you want to update the active state as you scroll
+            document.addEventListener('scroll', () => {
+                let current = '';
+                document.querySelectorAll('section').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                        current = section.getAttribute('id');
                     }
                 });
-            }).scroll();
-        </script>
-    </body>
-</html>
+    
+                navItems.forEach(li => {
+                    li.classList.remove('active');
+                    if (li.querySelector('a').getAttribute('href') === '#' + current) {
+                        li.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
