@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Showcasing my expertise in FastAPI, Data Collection, Data Analytics, and Forex Trading">
     <title>Humphrey Hills - FastAPI & Forex Expert</title>
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/myStyles.css">
+   
 </head>
 
 <body>
@@ -16,13 +22,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">H. Hills</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -41,16 +47,16 @@
         </div>
     </nav>
 
-    <div class="container py-5" id="home">
+    <div class="container-fluid">
         <!-- Hero Section -->
-        <section id="hero" class="py-5">
+        <section id="hero">
             <div class="container">
                 <h1 class="display-4">Welcome to My Professional Space</h1>
                 <p class="lead">Expert in FastAPI Development, Data Analysis, and Forex Trading</p>
             </div>
         </section>
         <!-- Home Section -->
-        <section id="home" class="py-5">
+        <section id="home-section" class="py-5">
             <div class="container">
                 <h1 class="display-4">Welcome to My Home Page</h1>
                 <p>Here you'll find information about my projects, skills, and professional interests.</p>
@@ -116,7 +122,7 @@
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare"></script>
 
     <script>
@@ -154,6 +160,16 @@
                         li.classList.add('active');
                     }
                 });
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav .nav-link').click(function () {
+                if (!$(this).hasClass('dropdown-toggle')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
             });
         });
     </script>

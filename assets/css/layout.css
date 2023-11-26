@@ -1,3 +1,10 @@
+/* Global Padding/Margin Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't add to the total width/height */
+}
+
 /* Flexbox container for the entire website */
 body{
     overflow-x: hidden;

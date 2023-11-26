@@ -2,12 +2,13 @@
 body {
     /* padding-top: 70px; Adjust this value based on the height of your navbar */
     background-color: hsl(0, 0%, 95%);
+    font-family: 'Merriweather', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
 }
 
-.active{
-    background-color: hsl(0, 0%, 90%);
-}
-
+/* Link and Menu Item Hover Effects */
 #navigation .navbar-nav .nav-link{
     color:hsl(0, 0%, 0%);
 }
@@ -18,11 +19,40 @@ body {
     z-index: 1000; /* Ensure the navbar stays on top of other elements */
     background-color: white; /* Or any color of your choice */
     background: radial-gradient(circle at center, #eeeff0, #f1f4f7); /* Example gradient */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
 
 }
 
+.nav-link, a {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* For underline effect */
+}
 
+.nav-link:hover, a:hover {
+    color: #ff6347; /* Change as per your color scheme */
+    /* border-bottom: 2px solid #ff6347; Solid underline on hover */
+}
+
+
+.nav-item.active .nav-link.active {
+    font-weight: bold;
+    /* color: #b30d0d; Or any color that stands out */
+
+}
+
+.nav-item.active .nav-link, .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+    /* Add any other styling as desired */
+}
+
+.navbar-brand, .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+
+/* Font styling */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Code Pro', monospace;
 }
@@ -31,9 +61,21 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #e74c3c;
+#hero {
+    background: url('../images/laptop-Web-Software-headphone-Internet.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
 }
+#hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 100px 0;
+}
+
+#hero img {
+    margin: 10px; /* This would add space around the image */
+}
+
 
 
 #home {
@@ -51,4 +93,33 @@ a:hover {
     /* margin-bottom: 20px; */
 }
 
+/* Button Hover Effects */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+button:hover {
+    background-color: #f1f1f1; /* Slightly lighter or darker */
+    transform: scale(1.05); /* Slight increase in size */
+}
+
+
+/* Image Hover Effects */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03); /* Slight zoom */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Form Input Focus Effects */
+input, textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Highlight color */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Glow effect */
+}
