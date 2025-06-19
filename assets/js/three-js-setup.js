@@ -10,7 +10,9 @@
  const scene = new THREE.Scene();
 
  // Objects
- const geometry = new THREE.SpherBufferGeometry(0.5, 65, 65);
+// Create a sphere geometry. The previous type name was misspelled and
+// prevented the scene from rendering correctly.
+const geometry = new THREE.SphereBufferGeometry(0.5, 65, 65);
 
  // Materials
  const material = new THREE.MeshStandardMaterial();
@@ -87,10 +89,13 @@
  const windowX = window.innerWidth / 2;
  const windowY = window.innerHeight / 2;
 
- function onDocumentMouseMove(event) {
-    mouseX = event.clientX = windowX;
-    mouseY = event.clientY = windowY;
- };
+function onDocumentMouseMove(event) {
+  // Capture mouse movement relative to the center of the window. The
+  // previous implementation overwrote the event properties, resulting in
+  // incorrect values.
+  mouseX = event.clientX - windowX;
+  mouseY = event.clientY - windowY;
+}
 
 
  const updateShape = (event) =>{
