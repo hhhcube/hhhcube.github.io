@@ -39,44 +39,50 @@ body {
 
 /* Main site header */
 .site-header {
-  border-top: 1px solid var(--muted);
-  border-bottom: 1px solid var(--muted);
-  background-color: var(--bg);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: var(--bg);
+  border-top: 1px solid var(--muted);
+  border-bottom: 1px solid var(--muted);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 /* Sections within the header */
 .header-section {
+  flex: 1;
   padding: 0 1rem;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-/* Divider lines between sections */
+/* Center section gets more space */
+.header-section.center {
+  flex: 2;
+  justify-content: center;
+}
+
+/* Right section content (e.g., CTA) */
+.header-section.right {
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+/* Divider lines between header sections */
 .header-section:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   height: 100%;
   width: 1px;
   background-color: var(--muted);
 }
 
-.header-section.left,
-.header-section.right {
-  flex: 1;
-}
-
-.header-section.center {
-  flex: 2;
-  justify-content: center;
-}
 
 .nav-menu {
   display: flex;
