@@ -37,7 +37,8 @@ body {
   }
 }
 
-header {
+/* Main site header */
+.site-header {
   border-top: 1px solid var(--muted);
   border-bottom: 1px solid var(--muted);
   background-color: var(--bg);
@@ -46,6 +47,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Sections within the header */
+.header-section {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Divider lines between sections */
+.header-section:not(:last-child) {
+  border-right: 1px solid var(--muted);
+}
+
+.header-section.left,
+.header-section.right {
+  flex: 1;
+}
+
+.header-section.center {
+  flex: 2;
+  justify-content: center;
 }
 
 .nav-menu {
@@ -68,8 +91,27 @@ header {
   cursor: pointer;
 }
 
-.nav-right {
+.header-section.right {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-section {
+    border-right: none;
+    border-bottom: 1px solid var(--muted);
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .header-section:last-child {
+    border-bottom: none;
+  }
 }
