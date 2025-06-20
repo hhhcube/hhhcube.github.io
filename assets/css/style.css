@@ -54,11 +54,18 @@ body {
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 /* Divider lines between sections */
-.header-section:not(:last-child) {
-  border-right: 1px solid var(--muted);
+.header-section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--muted);
 }
 
 .header-section.left,
@@ -109,6 +116,10 @@ body {
     justify-content: center;
     width: 100%;
     padding: 0.75rem 1rem;
+  }
+
+  .header-section::after {
+    display: none;
   }
 
   .header-section:last-child {
