@@ -132,3 +132,30 @@ body {
     border-bottom: none;
   }
 }
+
+/* CTA Block */
+.cta-block {
+  background: #0a0a0a;
+  color: #ddd;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-block .cta-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cta-block .cta-button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.cta-block .cta-button:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
