@@ -90,6 +90,12 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-menu.collapsed {
+  display: none;
 }
 
 .nav-menu li {
@@ -158,4 +164,31 @@ body {
 
 .cta-block .cta-button:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--fg, #fff);
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu.collapsed {
+    display: flex !important;
+  }
 }
