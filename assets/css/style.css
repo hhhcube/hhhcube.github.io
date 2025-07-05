@@ -80,12 +80,13 @@ body {
 }
 
 .nav-toggle {
-  display: none;
+  display: block;
   font-size: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
   color: #ff5c00;
+  z-index: 1000;
 }
 
 @media (max-width: 768px) {
