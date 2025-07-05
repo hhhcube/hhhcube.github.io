@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1.5rem;
   background: var(--bg, #fff);
   border-top: 1px solid var(--muted, #ccc);
   border-bottom: 1px solid var(--muted, #ccc);
@@ -73,6 +73,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-menu.collapsed {
@@ -87,6 +89,10 @@ body {
   cursor: pointer;
   color: #ff5c00;
   z-index: 1000;
+}
+
+.nav-menu a:hover {
+  color: #ff5c00;
 }
 
 @media (max-width: 768px) {

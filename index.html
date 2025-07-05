@@ -25,20 +25,26 @@
 
 <body>
     <!-- Site Header -->
-    <header class="site-header" id="top">
-        <div class="header-section left">H. Hill</div>
-        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-        <nav class="header-section center" aria-label="Primary">
-            <ul class="nav-menu collapsed" id="primary-menu">
-                <li class="nav-item active"><a class="nav-link" href="#home-section">Home <span class="visually-hidden">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-section right">Let's Work Together</div>
-    </header>
+    <header class="site-header d-flex justify-content-between align-items-center px-3 py-2">
+  <div class="header-left">H. Hill</div>
+  
+  <button class="nav-toggle d-md-none" aria-label="Toggle navigation">
+    <span class="hamburger" style="color: #ff5c00;">&#9776;</span>
+  </button>
+  
+  <nav class="nav d-none d-md-flex flex-grow-1 justify-content-center" aria-label="Primary">
+    <ul class="nav-menu d-flex gap-3 mb-0 list-unstyled">
+      <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-right d-none d-md-block">Let's Work Together</div>
+</header>
+
 
     <main class="container-fluid">
         <!-- Hero Section -->
