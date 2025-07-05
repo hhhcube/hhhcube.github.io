@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Showcasing my expertise in FastAPI, Data Collection, Data Analytics, and Forex Trading">
-    <title>H. Hills | Codex, FastAPI, Smart Money AI</title>
+    <meta name="keywords" content="FastAPI, Data Analytics, Forex Trading, Web Development">
+    <meta name="author" content="H. Hill">
+    <title>H. Hills Portfolio | FastAPI Developer &amp; Data Analyst</title>
     <!-- fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/myStyles.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <style>
+      html{scroll-behavior:smooth;}
+    </style>
    
 </head>
 
 <body>
     <!-- Site Header -->
-    <header class="site-header">
+    <header class="site-header" id="top">
         <div class="header-section left">H. Hill</div>
-        <div class="header-section center">
-            <ul class="nav-menu">
-                <li class="nav-item active"><a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a></li>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="header-section center" aria-label="Primary">
+            <ul class="nav-menu collapsed" id="primary-menu">
+                <li class="nav-item active"><a class="nav-link" href="#home-section">Home <span class="visually-hidden">(current)</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="header-section right">Let's Work Together</div>
     </header>
 
-    <div class="container-fluid">
+    <main class="container-fluid">
         <!-- Hero Section -->
         <section class="hero">
             <h1>Simple tools. Serious edge.</h1>
@@ -69,12 +74,12 @@
         <!-- Home Section -->
         <section id="home-section" class="py-5">
             <div class="container">
-                <h1 class="display-4">Welcome to My Home Page</h1>
+                <h2 class="display-4">Welcome to My Home Page</h2>
                 <p>Here you'll find information about my projects, skills, and professional interests.</p>
                 <!-- Additional content for the Home section -->
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- About Section -->
     <section id="about" class="py-5 bg-light">
@@ -126,46 +131,41 @@
     <!-- Footer -->
     <footer class="py-3 bg-light">
         <div class="container text-center">
-            <p>&copy; [Current Year] [Your Name]. All Rights Reserved.</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> H. Hill. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Load Three.js for the 3D background -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navItems = document.querySelectorAll('.nav-item');
-    
-            function onNavItemClick() {
-                // Remove 'active' class from all nav items
-                navItems.forEach(item => {
-                    item.classList.remove('active');
-                });
-    
-                // Add 'active' class to the clicked nav item
-                this.classList.add('active');
-            }
-    
-            navItems.forEach(item => {
-                item.addEventListener('click', onNavItemClick);
+            const menu = document.getElementById('primary-menu');
+            const toggle = document.querySelector('.nav-toggle');
+
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('collapsed');
             });
-    
-            // Optional: If you want to update the active state as you scroll
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navItems.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    menu.classList.add('collapsed');
+                });
+            });
+
             document.addEventListener('scroll', () => {
                 let current = '';
-                document.querySelectorAll('section').forEach(section => {
+                document.querySelectorAll('section[id]').forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
                     if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
                         current = section.getAttribute('id');
                     }
                 });
-    
+
                 navItems.forEach(li => {
                     li.classList.remove('active');
                     if (li.querySelector('a').getAttribute('href') === '#' + current) {
@@ -176,15 +176,6 @@
         });
     </script>
     
-    <script>
-        $(document).ready(function () {
-            $('.navbar-nav .nav-link').click(function () {
-                if (!$(this).hasClass('dropdown-toggle')) {
-                    $('.navbar-collapse').collapse('hide');
-                }
-            });
-        });
-    </script>
     
 </body>
 </html>
