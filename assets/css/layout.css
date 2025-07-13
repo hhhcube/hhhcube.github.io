@@ -121,6 +121,12 @@
   background-repeat: no-repeat;
   background-position: center;
   color: var(--fg);
+  /* Ensure a solid presence on large screens while allowing scaling */
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CTA Block */
