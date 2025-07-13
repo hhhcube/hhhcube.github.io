@@ -116,6 +116,10 @@
   padding: var(--space-lg) var(--space-sm);
   text-align: center;
   background-color: #111;
+  background-image: url("../images/dark-background-muted-lines.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--fg);
 }
 

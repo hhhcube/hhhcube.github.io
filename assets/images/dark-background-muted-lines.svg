@@ -1,0 +1,22 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#111"/>
+  <g stroke="#444" stroke-width="1" opacity="0.3">
+    <path d="M0 60 H1920" />
+    <path d="M0 120 H1920" />
+    <path d="M0 180 H1920" />
+    <path d="M0 240 H1920" />
+    <path d="M0 300 H1920" />
+    <path d="M0 360 H1920" />
+    <path d="M0 420 H1920" />
+    <path d="M0 480 H1920" />
+    <path d="M0 540 H1920" />
+    <path d="M0 600 H1920" />
+    <path d="M0 660 H1920" />
+    <path d="M0 720 H1920" />
+    <path d="M0 780 H1920" />
+    <path d="M0 840 H1920" />
+    <path d="M0 900 H1920" />
+    <path d="M0 960 H1920" />
+    <path d="M0 1020 H1920" />
+  </g>
+</svg>
