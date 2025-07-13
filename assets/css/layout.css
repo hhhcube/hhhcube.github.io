@@ -10,8 +10,13 @@
   z-index: 10;
 }
 
-.header-left, .header-right {
+.header-left {
   flex: 1;
+  color: var(--fg);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.header-right {
   color: var(--fg);
   padding: var(--space-sm) var(--space-md);
 }
