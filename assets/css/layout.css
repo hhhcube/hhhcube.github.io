@@ -16,6 +16,12 @@
   padding: var(--space-sm) var(--space-md);
 }
 
+.header-left,
+.header-right,
+.nav {
+  outline: 1px solid var(--muted);
+}
+
 .nav-toggle-label {
   display: none;
   cursor: pointer;
