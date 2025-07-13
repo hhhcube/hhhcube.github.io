@@ -48,6 +48,20 @@
   color: var(--accent);
 }
 
+.nav-right {
+  border: 1px solid var(--muted);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-right:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--primary);
+}
+
 /* Mobile Menu */
 .menu-toggle {
   display: none;
