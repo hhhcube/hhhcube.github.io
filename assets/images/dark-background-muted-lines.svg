@@ -1,22 +1,39 @@
-<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1920" height="1080" fill="#111"/>
-  <g stroke="#444" stroke-width="1" opacity="0.3">
-    <path d="M0 60 H1920" />
-    <path d="M0 120 H1920" />
-    <path d="M0 180 H1920" />
-    <path d="M0 240 H1920" />
-    <path d="M0 300 H1920" />
-    <path d="M0 360 H1920" />
-    <path d="M0 420 H1920" />
-    <path d="M0 480 H1920" />
-    <path d="M0 540 H1920" />
-    <path d="M0 600 H1920" />
-    <path d="M0 660 H1920" />
-    <path d="M0 720 H1920" />
-    <path d="M0 780 H1920" />
-    <path d="M0 840 H1920" />
-    <path d="M0 900 H1920" />
-    <path d="M0 960 H1920" />
-    <path d="M0 1020 H1920" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="600" preserveAspectRatio="none">
+  <!-- dark background -->
+  <rect width="100%" height="100%" fill="#0a0a0a" />
+
+  <!-- a few muted chart-style lines -->
+  <path id="line1" d="M0,400 L1920,350 L3840,380" fill="none" stroke="#555" stroke-width="2" stroke-opacity="0.3">
+    <animate attributeName="d"
+             dur="15s"
+             repeatCount="indefinite"
+             values="
+               M0,400 L1920,350 L3840,380;
+               M0,380 L1920,360 L3840,410;
+               M0,400 L1920,350 L3840,380
+             " />
+  </path>
+
+  <path id="line2" d="M0,300 L1920,320 L3840,290" fill="none" stroke="#777" stroke-width="1.5" stroke-opacity="0.2">
+    <animate attributeName="d"
+             dur="20s"
+             repeatCount="indefinite"
+             values="
+               M0,300 L1920,320 L3840,290;
+               M0,280 L1920,340 L3840,310;
+               M0,300 L1920,320 L3840,290
+             " />
+  </path>
+
+  <path id="line3" d="M0,200 L1920,180 L3840,210" fill="none" stroke="#999" stroke-width="1" stroke-opacity="0.15">
+    <animate attributeName="d"
+             dur="25s"
+             repeatCount="indefinite"
+             values="
+               M0,200 L1920,180 L3840,210;
+               M0,220 L1920,160 L3840,230;
+               M0,200 L1920,180 L3840,210
+             " />
+  </path>
 </svg>
+
