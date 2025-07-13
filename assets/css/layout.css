@@ -49,17 +49,30 @@
 }
 
 .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  height: 2.75rem;
+  padding: 0 var(--space-md);
   border: 1px solid var(--muted);
-  padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius);
   text-decoration: none;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.nav-right:hover {
+.nav-right svg.icon-handshake {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.nav-right:hover,
+.nav-right:focus {
   background-color: var(--accent);
   border-color: var(--accent);
   color: var(--primary);
+  outline: none;
 }
 
 /* Mobile Menu */
