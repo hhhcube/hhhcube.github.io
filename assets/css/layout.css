@@ -185,10 +185,44 @@
   }
 }
 
+/* Services */
+#services .card {
+  height: 100%;
+}
+
+/* Process */
+.process-step {
+  text-align: center;
+}
+
+/* Testimonials */
+.testimonial {
+  margin: 0;
+}
+
+/* Contact Form */
+#contact form label {
+  color: var(--fg);
+}
+
+#contact form input,
+#contact form textarea {
+  background-color: var(--primary);
+  color: var(--fg);
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--muted);
+}
+
 /* Footer */
 footer {
-  background-color: var(--bg);
+  background-color: var(--primary);
   color: var(--muted);
   padding: var(--space-sm);
   font-size: 0.875rem;
+  text-align: center;
 }
