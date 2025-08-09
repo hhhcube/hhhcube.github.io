@@ -116,13 +116,14 @@
   padding: var(--space-lg) var(--space-sm);
   text-align: center;
   background-color: #111;
-  background-image: url("../images/dark-background-muted-lines.svg");
+  /* Add a subtle overlay to improve text contrast over the background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/dark-background-muted-lines.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--fg);
   /* Ensure a solid presence on large screens while allowing scaling */
-  min-height: 500px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
