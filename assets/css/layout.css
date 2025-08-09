@@ -133,9 +133,6 @@
   font-size: 64px;
 }
 
-.hero .text-primary {
-  color: var(--fg);
-}
 
 /* CTA Block */
 .cta-block {
