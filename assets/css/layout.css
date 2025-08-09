@@ -210,6 +210,12 @@
 #services .card {
   height: 100%;
   border: 1px solid var(--muted);
+  font-family: 'Merriweather', serif;
+}
+
+#services .card p,
+#services .card a {
+  font-family: 'Merriweather', serif;
 }
 
 #services .card a {
