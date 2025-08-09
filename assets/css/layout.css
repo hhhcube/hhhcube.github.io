@@ -137,6 +137,11 @@
   font-size: clamp(1.25rem, 4vw, 2rem);
 }
 
+.hero-content {
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
 
 /* CTA Block */
 .cta-block {
