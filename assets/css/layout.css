@@ -212,6 +212,10 @@
   border: 1px solid var(--muted);
 }
 
+#services .card a {
+  font-size: 24px;
+}
+
 /* Process */
 .process-step {
   text-align: center;
