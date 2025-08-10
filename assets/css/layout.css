@@ -227,6 +227,7 @@
 /* Process */
 .process-step {
   text-align: center;
+  background: var(--shadow);
 }
 
 /* Testimonials */
