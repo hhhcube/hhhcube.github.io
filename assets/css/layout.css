@@ -113,7 +113,7 @@
 
 /* Hero Section */
 .hero {
-  padding: var(--space-lg) var(--space-sm);
+  padding: 0;
   text-align: center;
   background-color: #111;
   /* Add a subtle overlay to improve text contrast over the background image */
