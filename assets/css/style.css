@@ -196,3 +196,8 @@ body, main, section { background: transparent; }
 }
 
 
+.step-shell { max-width: 900px; margin: 2rem auto; }
+.step-indicator { font-size:.9rem; color: var(--muted); margin-bottom:.5rem; border-bottom:1px solid rgba(255,255,255,.08); padding-bottom:.5rem; }
+.step-container { min-height: 320px; }
+.mini-card { padding: var(--space-sm); transition: padding .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s ease; cursor:pointer; }
+.mini-card:hover { padding: calc(var(--space-sm) + .3rem); box-shadow: var(--elev-2); background: var(--panel-bg-hover); border-color: var(--panel-border-hover); }
