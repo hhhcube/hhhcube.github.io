@@ -45,3 +45,24 @@ section { background: transparent; }
   font-size: 20px;
 }
 
+/* Emphasized, accessible title links with animated underline */
+.title-link{
+  color: var(--fg);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  transition: color .18s ease, background-size .18s ease;
+}
+
+.link-card:hover .title-link,
+.title-link:focus-visible{
+  color: var(--accent);
+  background-size: 100% 2px;
+}
+
+/* Make the card feel clickable and show keyboard focus */
+.link-card{ cursor: pointer; }
+.link-card:focus-within{ outline: 2px solid var(--accent); outline-offset: 3px; }
+
