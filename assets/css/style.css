@@ -121,3 +121,79 @@ section { background: transparent; }
   .title-link::after{ transition: none; }
 }
 
+/* --- Service card hover expansion (layout-based) --- */
+
+/* Ensure consistent base spacing + elevation */
+.link-card{
+  box-shadow: var(--elev-1);
+  padding: var(--space-md);              /* expands on hover */
+  transition:
+    padding .22s cubic-bezier(.2,.8,.2,1),
+    box-shadow .22s ease,
+    background-color .22s ease,
+    border-color .22s ease;
+  cursor: pointer;
+  overflow: hidden;                      /* keeps edges clean during growth */
+  min-height: 100%;                      /* stable column height in Bootstrap rows */
+  transform: none;                       /* override previous transform-based lift */
+  will-change: padding;
+}
+
+/* True expansion: increases physical size (reflows neighbors) */
+.link-card:hover,
+.link-card:focus-within{
+  padding: calc(var(--space-md) + .6rem); /* grow */
+  box-shadow: var(--elev-2);
+  background-color: var(--panel-bg-hover);
+  border-color: var(--panel-border-hover);
+  transform: none;
+}
+
+/* Press feedback */
+.link-card:active{
+  padding: calc(var(--space-md) + .5rem);
+  transform: none;
+}
+
+/* Title underline animation (reliable) */
+.title-link{
+  position: relative;
+  z-index: 2;                 /* above stretched-link overlay */
+  display: inline-block;
+  color: var(--fg);
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+.title-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  transition: width .18s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Trigger via link hover/focus OR whole-card hover/focus */
+.title-link:hover,
+.title-link:focus-visible{ color: var(--accent); }
+
+.title-link:hover::after,
+.title-link:focus-visible::after,
+.link-card:hover .title-link::after,
+.link-card:focus-within .title-link::after{
+  width: 100%;
+}
+
+/* Keyboard focus ring */
+.link-card:focus-within{ outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .link-card{ transition: none; }
+  .title-link::after{ transition: none; }
+}
+
+
