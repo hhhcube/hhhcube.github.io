@@ -149,6 +149,12 @@
   margin: 0 auto;
 }
 
+.hero .btn-accent:hover {
+  background: none;
+  color: var(--accent);
+  border: 1px solid var(--muted);
+}
+
 
 /* CTA Block */
 .cta-block {
