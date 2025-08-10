@@ -39,3 +39,9 @@ section { background: transparent; }
   text-decoration: none;
 }
 .btn-accent:hover { filter: brightness(0.95); }
+
+#services h3,
+#services h3 a {
+  font-size: 20px;
+}
+
