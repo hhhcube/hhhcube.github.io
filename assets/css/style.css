@@ -10,7 +10,7 @@
 @import url('layout.css');
 
 /* Light card on dark background */
-html, body { background-color: var(--primary); }
+html, body { background-color: var(--black); }
 main { background: transparent; }
 section { background: transparent; }
 
