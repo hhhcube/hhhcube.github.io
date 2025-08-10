@@ -265,6 +265,11 @@
   outline: none;
 }
 
+#contact .btn-accent:hover {
+  background-color: rgba(255, 184, 0, 0.8);
+  filter: none;
+}
+
 /* Footer */
 .site-footer {
   display: flex;
