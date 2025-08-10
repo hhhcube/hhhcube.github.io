@@ -115,7 +115,6 @@
 .hero {
   padding: 0;
   text-align: center;
-  background-color: #111;
   /* Add a subtle overlay to improve text contrast over the background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/dark-background-muted-lines.svg");
   background-size: cover;
