@@ -26,4 +26,8 @@
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
+  --panel-bg: rgba(255,255,255,0.05);
+  --panel-border: rgba(255,255,255,0.08);
+  --panel-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --panel-radius: 16px; /* optional, or use var(--radius) */
 }

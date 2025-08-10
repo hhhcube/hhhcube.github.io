@@ -2,14 +2,21 @@
 body {
   font-family: var(--font-body);
   color: var(--fg);
-  background-color: var(--primary);
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
+html, body {
+  background-color: var(--primary);
+}
+
 main {
-  background-color: #060606;
+  background: transparent;
+}
+
+section {
+  background: transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
