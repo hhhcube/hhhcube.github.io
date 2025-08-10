@@ -253,7 +253,7 @@
 }
 
 /* Footer */
-footer {
+body > footer {
   background-color: var(--primary);
   color: var(--muted);
   padding: var(--space-sm);
