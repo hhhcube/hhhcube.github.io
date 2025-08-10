@@ -261,7 +261,7 @@
   justify-content: space-between;
   padding: var(--space-sm) var(--space-md);
   background-color: var(--primary);
-  border-top: 1px solid var(--muted);
+  border-top: 1px solid var(--primary);
   color: var(--fg);
 }
 
