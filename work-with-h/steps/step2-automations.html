@@ -1,0 +1,37 @@
+<input type="hidden" name="service" value="automations" id="service" hx-swap-oob="true">
+<input type="hidden" name="_redirect" value="/work-with-h/thanks/automations/" id="_redirect" hx-swap-oob="true">
+<h2 class="mb-4">Automation Project Details</h2>
+<div class="mb-3">
+  <label class="form-label">Tools involved</label><br>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="notion" required><label class="form-check-label">Notion</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="gsheets"><label class="form-check-label">Google Sheets</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="zapier"><label class="form-check-label">Zapier</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="make"><label class="form-check-label">Make</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="slack"><label class="form-check-label">Slack</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="gmail"><label class="form-check-label">Gmail</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="tradingview"><label class="form-check-label">TradingView</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="metatrader"><label class="form-check-label">MetaTrader</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="tools[]" value="other"><label class="form-check-label">Other</label></div>
+</div>
+<div class="mb-3">
+  <label class="form-label">Trigger type</label><br>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="trigger_type" value="time-based"><label class="form-check-label">Time-based</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="trigger_type" value="webhook"><label class="form-check-label">Webhook</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="trigger_type" value="manual"><label class="form-check-label">Manual</label></div>
+</div>
+<div class="mb-3">
+  <label class="form-label">Volume</label><br>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="volume" value="low"><label class="form-check-label">Low</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="volume" value="med"><label class="form-check-label">Med</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="volume" value="high"><label class="form-check-label">High</label></div>
+</div>
+<div class="mb-3">
+  <label class="form-label">Data sensitivity</label><br>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="sensitivity" value="none"><label class="form-check-label">None</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="sensitivity" value="pii"><label class="form-check-label">PII</label></div>
+  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="sensitivity" value="contractual"><label class="form-check-label">Contractual</label></div>
+</div>
+<div class="d-flex justify-content-between mt-3">
+  <button type="button" class="btn btn-outline-light" hx-get="/work-with-h/steps/step1.html" hx-target=".step-container" hx-swap="innerHTML" hx-push-url="#s1">Back</button>
+  <button type="button" class="btn-accent" hx-get="/work-with-h/steps/step3.html" hx-target=".step-container" hx-swap="innerHTML" hx-push-url="#s3">Next</button>
+</div>

@@ -1,0 +1,10 @@
+<input type="hidden" name="service" value="unsure" id="service" hx-swap-oob="true">
+<input type="hidden" name="_redirect" value="/work-with-h/book/" id="_redirect" hx-swap-oob="true">
+<h2 class="mb-4">Not sure yet?</h2>
+<p>Book a 15-minute triage call.</p>
+<p><a href="/work-with-h/book/" class="btn-accent">Book a call</a></p>
+<p class="mt-3">Or continue to leave your email and I'll follow up.</p>
+<div class="d-flex justify-content-between mt-3">
+  <button type="button" class="btn btn-outline-light" hx-get="/work-with-h/steps/step1.html" hx-target=".step-container" hx-swap="innerHTML" hx-push-url="#s1">Back</button>
+  <button type="button" class="btn-accent" hx-get="/work-with-h/steps/step3.html" hx-target=".step-container" hx-swap="innerHTML" hx-push-url="#s3">Next</button>
+</div>
