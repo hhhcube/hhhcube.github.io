@@ -214,8 +214,10 @@
 /* Services */
 #services .card {
   height: 100%;
-  border: 1px solid var(--muted);
+  border: 1px solid var(--muted) !important;
   font-family: 'Merriweather', serif;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 #services .card p,
