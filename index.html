@@ -167,7 +167,7 @@
   <footer class="site-footer">
     <div class="footer-left">H. Hill</div>
     <div class="footer-right">
-      &copy; <script>document.write(new Date().getFullYear());</script> H. Hill. All Rights Reserved.
+      <span hx-get="/year" hx-trigger="load" hx-swap="outerHTML">&copy; YEAR_PLACEHOLDER</span> H. Hill. All Rights Reserved.
     </div>
   </footer>
 </body>

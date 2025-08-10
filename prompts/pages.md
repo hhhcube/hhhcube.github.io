@@ -52,7 +52,7 @@ Edit
 
   <footer class="py-5">
     <div class="container">
-      <p>&copy; <script>document.write(new Date().getFullYear());</script> H. Hill. All Rights Reserved.</p>
+      <p><span hx-get="/year" hx-trigger="load" hx-swap="outerHTML">&copy; YEAR_PLACEHOLDER</span> H. Hill. All Rights Reserved.</p>
     </div>
   </footer>
 </body>
@@ -131,7 +131,7 @@ Edit
 
   <footer class="py-5">
     <div class="container">
-      <p>&copy; <script>document.write(new Date().getFullYear());</script> H. Hill. All Rights Reserved.</p>
+      <p><span hx-get="/year" hx-trigger="load" hx-swap="outerHTML">&copy; YEAR_PLACEHOLDER</span> H. Hill. All Rights Reserved.</p>
     </div>
   </footer>
 
