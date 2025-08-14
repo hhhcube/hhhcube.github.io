@@ -139,21 +139,47 @@
   <section id="contact" class="py-5">
     <div class="container">
       <h2>Contact</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Your Email" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="How can we help?" required></textarea>
-        </div>
-        <button type="submit" class="btn-accent">Send Message</button>
-      </form>
+        <form id="contact-form"
+              action="https://brevo-proxy.h3webtech.workers.dev"
+              method="POST">
+
+          <!-- hidden fields required by the Worker -->
+          <input type="hidden" name="_redirect" value="/contact/thanks/">
+          <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="service" value="contact">
+          <input type="hidden" name="form_name" value="homepage_contact">
+
+          <div class="mb-3">
+            <label for="c-name" class="form-label">Name</label>
+            <input id="c-name" name="name" type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="mb-3">
+            <label for="c-email" class="form-label">Email</label>
+            <input id="c-email" name="email" type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+
+          <!-- NEW: Subject field -->
+          <div class="mb-3">
+            <label for="c-subject" class="form-label">Subject</label>
+            <input id="c-subject" name="subject" type="text" class="form-control" placeholder="What's this about?">
+          </div>
+
+          <div class="mb-3">
+            <label for="c-message" class="form-label">Message</label>
+            <textarea id="c-message" name="message" rows="4" class="form-control" placeholder="How can we help?" required></textarea>
+          </div>
+
+          <!-- Consent is required by the Worker -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="c-consent" name="consent" required>
+            <label class="form-check-label" for="c-consent">
+              I agree to be contacted about my inquiry.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-accent">Send Message</button>
+        </form>
     </div>
   </section>
 
