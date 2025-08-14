@@ -24,13 +24,13 @@ body, main, section { background: transparent; }
 
 /* Headings/links inside cards remain readable and on-brand */
 .card h3, .card h4, .card h5 { color: var(--fg); margin-top: 0; }
-.card a { color: var(--fg); text-decoration: none; }
-.card a:hover { color: var(--accent); }
+.card a { text-decoration: none; }
+.card a:hover { color: var(--accent-active); }
 
 .btn-accent {
   display: inline-block;
   background: var(--accent);
-  color: #111;
+  color: var(--primary);
   border: none;
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
