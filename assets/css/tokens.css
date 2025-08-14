@@ -14,6 +14,11 @@
   --bg: #0a0a0a;
   --black: #111111;
 
+  /* Button color tokens */
+  --accent-contrast: var(--primary); /* dark label on accent */
+  --accent-hover: #e6a700;          /* ~10% darker than --accent */
+  --accent-active: #d99a00;         /* ~20% darker than --accent */
+
   /* Typography */
   --font-body: 'Inter', sans-serif;
   --font-display: 'Merriweather', serif;
