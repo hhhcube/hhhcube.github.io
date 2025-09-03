@@ -201,3 +201,7 @@ body, main, section { background: transparent; }
 .step-container { min-height: 320px; }
 .mini-card { padding: var(--space-sm); transition: padding .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s ease; cursor:pointer; }
 .mini-card:hover { padding: calc(var(--space-sm) + .3rem); box-shadow: var(--elev-2); background: var(--panel-bg-hover); border-color: var(--panel-border-hover); }
+
+/* GGJ page helper */
+.ggj-card h2 { margin-top: 1.2rem; }
+.ggj-card ul { margin-bottom: 1rem; }
