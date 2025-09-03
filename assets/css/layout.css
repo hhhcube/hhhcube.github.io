@@ -17,7 +17,7 @@
 }
 
 .header-right {
-  color: var(--primary);
+  color: var(--accent);
   padding: var(--space-sm) var(--space-md);
 }
 
