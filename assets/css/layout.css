@@ -321,6 +321,7 @@
 }
 .section--intro {
   margin-block-end: 2.5rem; /* slightly tighter after hero */
+  text-align: center; /* center intro content */
 }
 .section--faq {
   margin-block-start: 3.5rem; /* give FAQ a bit more top space */
