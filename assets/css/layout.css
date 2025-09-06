@@ -29,7 +29,7 @@
 }
 
 .hamburger::before {
-  content: '\2630'; /* Unicode for hamburger icon */
+  content: "\2630"; /* Unicode for hamburger icon */
 }
 
 .nav-menu {
@@ -63,7 +63,10 @@
   border: 1px solid var(--muted);
   border-radius: var(--radius);
   text-decoration: none;
-  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border-color 0.3s;
 }
 
 .nav-right svg.icon-handshake {
@@ -116,7 +119,9 @@
   padding: 0;
   text-align: center;
   /* Add a subtle overlay to improve text contrast over the background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/dark-background-muted-lines.svg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/dark-background-muted-lines.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -151,7 +156,6 @@
 
 /* Button hover styles are handled in utilities.css */
 
-
 /* CTA Block */
 .cta-block {
   background: var(--bg);
@@ -172,7 +176,9 @@
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
   text-decoration: none;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
 }
 
 .cta-button:hover {
@@ -212,14 +218,14 @@
 #services .card {
   height: 100%;
   border: 1px solid var(--muted) !important;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   background-color: transparent !important;
   box-shadow: none !important;
 }
 
 #services .card p,
 #services .card a {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 /* Process */
@@ -244,7 +250,9 @@
   color: var(--fg);
   border: 1px solid var(--muted);
   border-radius: var(--radius);
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 #contact form input::placeholder,
@@ -291,4 +299,68 @@
 
 .footer-right {
   font-size: 0.875rem;
+}
+
+/* --------------------------------------------------------------
+   Google Growth Jumpstart: Section Rhythm & CTA Emphasis
+   - Keep variables and typography from tokens/base
+   - Spacing uses rem, responsive-friendly
+   -------------------------------------------------------------- */
+
+/* Page container */
+.content-box {
+  padding: 2rem 3rem;
+  line-height: 1.7;
+  max-width: 61.25rem; /* 980px */
+  margin-inline: auto;
+}
+
+/* Section rhythm */
+.section {
+  margin-block: 3rem; /* default space between sections */
+}
+.section--intro {
+  margin-block-end: 2.5rem; /* slightly tighter after hero */
+}
+.section--faq {
+  margin-block-start: 3.5rem; /* give FAQ a bit more top space */
+}
+
+/* Headings hierarchy */
+.section h2 {
+  font-size: 1.5rem; /* keep within system scale */
+  margin-bottom: 1rem;
+  color: var(--highlight);
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+/* Lists */
+.section ul {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+.section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* CTA emphasis (top & bottom) */
+.cta {
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+}
+.cta .btn-accent {
+  margin-block: 0.5rem;
+}
+
+/* Narrow viewports: ensure comfortable padding and spacing */
+@media (max-width: 640px) {
+  .content-box {
+    padding: 1.5rem;
+  }
+  .section {
+    margin-block: 2rem;
+  }
 }
