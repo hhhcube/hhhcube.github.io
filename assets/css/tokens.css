@@ -30,8 +30,11 @@
   /* Spacing Tokens */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
+  /* 2 and 4 original rem below */
+  --space-md: 1.5rem; 
+  --space-lg: 2rem;
+
+  /* Panel Highlights */
   --panel-bg: rgba(255,255,255,0.05);
   --panel-border: rgba(255,255,255,0.08);
   --panel-shadow: 0 10px 30px rgba(0,0,0,0.35);
