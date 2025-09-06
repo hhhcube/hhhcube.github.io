@@ -1,41 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>SEO Clarity Report – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-left"><a href="/">H. Hill</a></div>
-    <nav class="nav" aria-label="Primary">
-      <ul class="nav-menu" id="primary-menu">
-        <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#what-i-offer">What I Offer</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#our-process">Our Process</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#testimonials">Testimonials</a></li>
-      </ul>
-    </nav>
-    <a href="/subscribe/" class="header-right nav-right">Let's Work Together</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>SEO Clarity Report – Coming Soon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left"><a href="/">H. Hill</a></div>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-menu" id="primary-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#what-i-offer">What I Offer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#our-process">Our Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#testimonials">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="/subscribe/" class="header-right nav-right"
+        >Let's Work Together</a
+      >
+    </header>
 
-  <main class="container py-5">
-    <div class="card mx-auto" style="max-width: 720px;">
-      <h1 class="mb-3">SEO Clarity Report</h1>
-      <p class="lead mb-4">Get a comprehensive overview of your current SEO standing.</p>
-      <p class="text-muted mb-4">This offer is being finalized. Be first to know when it launches.</p>
-      <a class="btn-accent" href="/subscribe/">Join the Waitlist</a>
-    </div>
-  </main>
+    <main class="container py-5">
+      <div class="card mx-auto prose content-box u-lh-170">
+        <div class="section section--intro">
+          <h1>SEO Clarity Report</h1>
+          <p class="lead">
+            Get a comprehensive overview of your current SEO standing.
+          </p>
+          <div class="cta">
+            <a class="btn-accent" href="/subscribe/">Join the Waitlist</a>
+          </div>
+        </div>
 
-  <footer class="py-5">
-    <div class="container">
-      <p><span hx-get="/year" hx-trigger="load" hx-swap="outerHTML">&copy; YEAR_PLACEHOLDER</span> H. Hill. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
+        <div class="section">
+          <p class="text-muted">
+            This offer is being finalized. Be first to know when it launches.
+          </p>
+        </div>
+
+        <div class="cta">
+          <a class="btn-accent" href="/subscribe/">Join the Waitlist</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <p>
+          <span hx-get="/year" hx-trigger="load" hx-swap="outerHTML"
+            >&copy; YEAR_PLACEHOLDER</span
+          >
+          H. Hill. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
