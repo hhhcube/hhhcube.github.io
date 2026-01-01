@@ -25,9 +25,12 @@
     <nav class="nav" aria-label="Primary">
       <ul class="nav-menu" id="primary-menu">
         <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
-        <li class="nav-item"><a class="nav-link" href="#phyxis">Phyxis</a></li>
-        <li class="nav-item"><a class="nav-link" href="#bosbox">BOSBOX</a></li>
-        <li class="nav-item"><a class="nav-link" href="#fit">Who We Serve</a></li>
+        <li class="nav-item"><a class="nav-link" href="#flagship">Flagship Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#architecture">Architecture &amp; Standards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#focus">Current Focus</a></li>
+        <li class="nav-item"><a class="nav-link" href="#partners">Design Partners</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trading">Trading &amp; Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#principles">Principles</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -41,7 +44,7 @@
         <p class="lead">Phyxis keeps the baseline honest. BOSBOX interrogates behavior and enforces discipline. Together they give operators predictable systems, concise evidence, and no marketing noise.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-highlight">Start a conversation</a>
-          <a href="#fit" class="btn-accent">Who we work with</a>
+          <a href="#focus" class="btn-accent">Current focus</a>
         </div>
       </div>
     </section>
@@ -76,27 +79,35 @@
       </div>
     </section>
 
-    <section id="phyxis" class="py-5">
+    <section id="flagship" class="py-5">
       <div class="container">
-        <div class="row gy-4 align-items-start">
-          <div class="col-lg-5">
-            <div class="pill">Platform</div>
-            <h2>Phyxis: hardened operating baseline</h2>
-            <p class="text-muted">The infrastructure guardrail: controlled paths, logged decisions, and no silent drift.</p>
-          </div>
-          <div class="col-lg-7">
+        <div class="section-intro">
+          <p class="eyebrow">Flagship projects</p>
+          <h2>Discrete tools with a shared contract</h2>
+          <p class="text-muted">Phyxis hardens the baseline. BOSBOX interrogates discipline. Together they keep operations deterministic.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
             <div class="section-card h-100">
-              <h3>Purpose</h3>
+              <div class="pill">Phyxis</div>
+              <h3>Hardened operating baseline</h3>
+              <p class="text-muted">The infrastructure guardrail: controlled paths, logged decisions, and no silent drift.</p>
               <ul class="list-tight">
                 <li>Lock in approved infrastructure states with deterministic rollouts.</li>
                 <li>Constrain change to vetted playbooks and enforce access boundaries.</li>
-                <li>Surface deviations before they become outages or compliance gaps.</li>
-              </ul>
-              <h3 class="mt-4">Guarantees</h3>
-              <ul class="list-tight">
                 <li>Hardened defaults for identity, logging, and isolation.</li>
-                <li>Traceable change history with rollback discipline.</li>
-                <li>Baseline reporting that executives and auditors can act on.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-card h-100">
+              <div class="pill">BOSBOX</div>
+              <h3>Evidence and enforcement</h3>
+              <p class="text-muted">The interrogation layer: it challenges procedures, automation, and human responses with measurable proof.</p>
+              <ul class="list-tight">
+                <li>Stress-test runbooks, alerts, and on-call responses for failure realism.</li>
+                <li>Interrogate incidents to expose process debt and brittle paths.</li>
+                <li>Exception reports prioritized by blast radius and accountability.</li>
               </ul>
             </div>
           </div>
@@ -104,26 +115,30 @@
       </div>
     </section>
 
-    <section id="bosbox" class="py-5">
+    <section id="architecture" class="py-5">
       <div class="container">
-        <div class="row gy-4 align-items-start">
-          <div class="col-lg-5 order-lg-2">
-            <div class="pill">Discipline</div>
-            <h2>BOSBOX: evidence and enforcement</h2>
-            <p class="text-muted">The interrogation layer: it challenges procedures, automation, and human responses with measurable proof.</p>
-          </div>
-          <div class="col-lg-7 order-lg-1">
+        <div class="section-intro">
+          <p class="eyebrow">Architecture &amp; Standards</p>
+          <h2>Deterministic infrastructure, documented</h2>
+          <p class="text-muted">Workflows stay auditable with hardened defaults, traceable changes, and controlled interfaces.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
             <div class="section-card h-100">
-              <h3>What it does</h3>
+              <h3>Baselines</h3>
               <ul class="list-tight">
-                <li>Stress-tests runbooks, alerts, and on-call responses for failure realism.</li>
-                <li>Interrogates incidents to expose process debt and brittle paths.</li>
-                <li>Checks adherence to service levels and operational contracts.</li>
+                <li>Deterministic rollouts mapped to approved infrastructure states.</li>
+                <li>Traceable change history with rollback discipline.</li>
+                <li>Hardened defaults for identity, logging, and isolation.</li>
               </ul>
-              <h3 class="mt-4">Outputs</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-card h-100">
+              <h3>Interfaces</h3>
               <ul class="list-tight">
-                <li>Exception reports prioritized by blast radius and accountability.</li>
-                <li>Actionable fixes with ownership, timing, and validation criteria.</li>
+                <li>Managed surfaces that expose evidence without the core code.</li>
+                <li>Drift detection tied to operational contracts and service levels.</li>
                 <li>Evidence packets suitable for governance and audit review.</li>
               </ul>
             </div>
@@ -132,41 +147,61 @@
       </div>
     </section>
 
-    <section id="privacy" class="py-5">
+    <section id="focus" class="py-5">
       <div class="container">
-        <div class="section-card">
-          <p class="eyebrow">Private by design</p>
-          <h2>Core code remains closed</h2>
-          <p class="text-muted mb-0">Phyxis and BOSBOX operate through managed interfaces only. The core implementations stay private to protect integrity and client environments while still delivering clear outcomes.</p>
+        <div class="section-intro">
+          <p class="eyebrow">Current Focus</p>
+          <h2>Where we’re investing effort now</h2>
+          <p class="text-muted">A near-term roadmap so partners know what to expect next.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="section-card h-100">
+              <h3>Stability drills</h3>
+              <p class="mb-0">Expanded failure scenarios to prove runbooks hold under pressure and close process debt faster.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="section-card h-100">
+              <h3>Zero-drift reports</h3>
+              <p class="mb-0">Sharper reporting that pairs deviations with accountable owners, timelines, and validation criteria.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="section-card h-100">
+              <h3>Interface hardening</h3>
+              <p class="mb-0">Private-by-design surfaces that share evidence while keeping core implementations closed.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="fit" class="py-5">
+    <section id="partners" class="py-5">
       <div class="container">
         <div class="section-intro">
-          <p class="eyebrow">Positioning</p>
-          <h2>Who this is for</h2>
-          <p class="text-muted">Straightforward alignment so teams know if Phyxis and BOSBOX are the right instruments.</p>
+          <p class="eyebrow">Design Partners</p>
+          <h2>Built with operators, not for them</h2>
+          <p class="text-muted">We co-design controls and evidence with teams who live in regulated, uptime-critical environments.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-6">
             <div class="section-card h-100">
-              <h3>Built for</h3>
+              <h3>Who we collaborate with</h3>
               <ul class="list-tight">
                 <li>Operators who need deterministic, auditable infrastructure.</li>
                 <li>Teams with regulatory, safety, or uptime obligations.</li>
-                <li>Leaders who want brief, decisive reporting over dashboards.</li>
+                <li>Leaders who prioritize concise, decisive reporting.</li>
               </ul>
             </div>
           </div>
           <div class="col-md-6">
             <div class="section-card h-100">
-              <h3>Not a fit</h3>
+              <h3>Engagement style</h3>
               <ul class="list-tight">
-                <li>Experimental or DIY environments seeking open-source code.</li>
-                <li>Marketing sites or hobby projects without operational stakes.</li>
-                <li>Teams looking for generalized consulting without enforcement.</li>
+                <li>Intake to map risk, dependencies, and controls.</li>
+                <li>Stabilization while Phyxis locks the stack and BOSBOX interrogates behavior.</li>
+                <li>Discipline loops that verify closure before declaring a fix done.</li>
               </ul>
             </div>
           </div>
@@ -174,29 +209,40 @@
       </div>
     </section>
 
-    <section id="engagement" class="py-5">
+    <section id="trading" class="py-5">
+      <div class="container">
+        <div class="section-card">
+          <p class="eyebrow">Trading &amp; Research</p>
+          <h2>Operational discipline for algorithmic edges</h2>
+          <p class="text-muted mb-0">BOSBOX pressure-tests runbooks, alerts, and human response for latency-sensitive stacks, while Phyxis keeps the baseline deterministic so experiments stay reproducible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles" class="py-5">
       <div class="container">
         <div class="section-intro">
-          <p class="eyebrow">How we work</p>
-          <h2>Measured engagement, predictable outcomes</h2>
+          <p class="eyebrow">Principles</p>
+          <h2>Evidence first, noise last</h2>
+          <p class="text-muted">Disciplined infrastructure is a contract. These are the rules we refuse to bend.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="section-card h-100">
-              <h3>Intake</h3>
-              <p>We map current risk, dependencies, and existing controls to define the baseline contract.</p>
+              <h3>Determinism</h3>
+              <p class="mb-0">No silent drift. Rollouts are controlled, logged, and reversible.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="section-card h-100">
-              <h3>Stabilize</h3>
-              <p>Phyxis locks the stack to a deterministic state while BOSBOX begins interrogations.</p>
+              <h3>Accountability</h3>
+              <p class="mb-0">Every exception pairs evidence with owners, timelines, and validation.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="section-card h-100">
-              <h3>Discipline loop</h3>
-              <p>Continuous evidence, prioritized exceptions, and verified closure to keep the system honest.</p>
+              <h3>Privacy by design</h3>
+              <p class="mb-0">Core implementations stay closed; outcomes are shared through managed interfaces.</p>
             </div>
           </div>
         </div>
