@@ -36,7 +36,7 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-grid">
+      <div class="hero-grid" style="grid-template-columns: minmax(0, 1fr);">
         <div class="hero-copy">
           <p class="eyebrow">Software Engineering · Systems Architecture</p>
           <h1 id="hero-heading">I build the systems behind the operation.</h1>
@@ -46,48 +46,6 @@
           <div class="hero-actions">
             <a class="btn-highlight" href="#systems">View selected systems <span aria-hidden="true">→</span></a>
             <a class="btn-accent" href="https://github.com/hhhcube">GitHub profile <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-
-        <div class="system-visual" aria-label="System architecture capability map">
-          <div class="visual-header">
-            <span class="status-dot"></span>
-            <span>System architecture</span>
-            <span class="visual-state">operational</span>
-          </div>
-          <div class="architecture-map">
-            <div class="architecture-node node-app">
-              <span class="node-label">01</span>
-              <strong>Applications</strong>
-              <small>APIs · services · interfaces</small>
-            </div>
-            <div class="map-connector connector-a"></div>
-            <div class="architecture-node node-automation">
-              <span class="node-label">02</span>
-              <strong>Automation</strong>
-              <small>workflows · events · integrations</small>
-            </div>
-            <div class="map-connector connector-b"></div>
-            <div class="architecture-node node-data">
-              <span class="node-label">03</span>
-              <strong>Data</strong>
-              <small>PostgreSQL · validation · audit</small>
-            </div>
-            <div class="map-connector connector-c"></div>
-            <div class="architecture-node node-infra">
-              <span class="node-label">04</span>
-              <strong>Infrastructure</strong>
-              <small>Linux · Docker · deployment</small>
-            </div>
-            <div class="ai-orbit">
-              <span>AI</span>
-              <small>assisted layer</small>
-            </div>
-          </div>
-          <div class="visual-footer">
-            <span>security boundaries</span>
-            <span>observability</span>
-            <span>human control</span>
           </div>
         </div>
       </div>
